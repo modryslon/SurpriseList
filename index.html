@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Surprise List</title>
+</head>
+<body>
+    <header>
+        <h1>KÝŽENÁ PŘEKVAPENÍ</h1>
+        <section>
+            <div class="surpriseList-div_a">
+                <form>název:</form>
+                <form>cena:</form>
+                <form>web-link:</form> 
+                <form>poznámky:</form>
+            </div>
+            <div class="surpriseList-div_b">
+                <form onkeydown="return event.key != 'Enter';">
+                    <input type="text" class="surprise-input_name">
+                </form>
+                <form onkeydown="return event.key != 'Enter';">
+                    <input type="text" class="surprise-input_prize">
+                </form>
+                <form onkeydown="return event.key != 'Enter';">
+                    <input type="text" class="surprise-input_url">
+                </form>
+                <form onkeydown="return event.key != 'Enter';">
+                    <input type="text" class="surprise-input_comment">
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <div class="surpriseList-div_c">
+                <h1>Seznam</h1>
+                <button class="button-addSurprise" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </div>
+            <div class="surpriseList-div_d">
+                <select class="filter-undone">
+                    <option value="all">všechny ceny</option>
+                    <option value="bronze">do 500 Kč</option>
+                    <option value="silver">501 - 1500 Kč</option>
+                    <option value="gold">1501 - 4000 Kč</option>
+                    <option value="rubin">nad 4000 Kč</option>
+                </select>
+            </div>
+        </section>
+        <div class="surpriseList-div_undone">
+            <ul class="list-undone"></ul>
+        </div>
+        <section>
+            <div class="surpriseList-div_e">
+                <h1>Hotovo</h1>
+            </div>
+            <div class="surpriseList-div_f">
+                <select class="filter-completed">
+                    <option value="all">všechny ceny</option>
+                    <option value="bronze">do 500 Kč</option>
+                    <option value="silver">501 - 1500 Kč</option>
+                    <option value="gold">1501 - 4000 Kč</option>
+                    <option value="rubin">nad 4000 Kč</option>
+                </select>
+            </div>
+        </section>
+        <div class="surpriseList-div_completed">
+            <ul class="list-completed"></ul>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
