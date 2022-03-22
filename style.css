@@ -27,7 +27,7 @@ main {
 header h1 {
     font-size: 5rem;
     padding: 1.5rem;
-    background: linear-gradient(45deg, yellow, var(--clr_mountbattenPink));
+    background: linear-gradient(45deg, var(--clr_silverPink), var(--clr_mountbattenPink));
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
